@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2024.05.20-04
+      author: Kamran Ahmadov
+      changes:
+        - update:
+            columns:
+              - column:
+                  name: name
+                  value: Cabir
+            tableName: students
+            where: name='Selim'

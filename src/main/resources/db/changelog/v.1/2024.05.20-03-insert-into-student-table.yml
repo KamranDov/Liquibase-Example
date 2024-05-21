@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2024.05.20-03
+      author: Kamran Ahmadov
+      changes:
+        - insert:
+            tableName: students
+            columns:
+              - column:
+                  name: name
+                  value: Kamran
+              - column:
+                  name: email
+                  value: axmedovkamran19@gmail.com
+              - column:
+                  name: age
+                  value: 28
+  - changeSet:
+      id: 2024.05.20-04
+      author: Kamran Ahmadov
+      changes:
+        - insert:
+            tableName: students
+            columns:
+              - column:
+                  name: name
+                  value: Selim
+              - column:
+                  name: email
+                  value: selim1970@gmail.com
+              - column:
+                  name: age
+                  value: 54

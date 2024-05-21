@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2024.05.20-02
+      author: Kamran Ahmadov
+      changes:
+        - modifyDataType:
+            columnName: email
+            newDataType: VARCHAR(100)
+            tableName: students
+

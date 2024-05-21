@@ -1,0 +1,28 @@
+spring:
+
+  #project name
+  application:
+    name: liquibase example
+
+  #database configuration
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/liquibase-db
+    username: root
+    password: 123456789root
+  jpa:
+    database: mysql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: validate
+    generate-ddl: true
+    show-sql: true
+
+  #liquibase configuration
+  liquibase:
+#    enabled: true  <-- it is already ture by default
+    change-log: classpath:db/changelog/db.changelog-master.yml
