@@ -3,6 +3,9 @@ package com.crocusoft.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -18,5 +21,7 @@ public class Student {
     private String name;
     private String email;
     private Integer age;
+    @Column(name = "create_date")
+    private LocalDateTime createDate;
 }
 

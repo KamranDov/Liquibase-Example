@@ -1,11 +1,15 @@
 databaseChangeLog:
   - changeSet:
-      id: 2024.05.20-05
+      id: 2024.05.21-05
       author: Kamran Ahmadov
       changes:
         - addColumn:
             tableName: students
             columns:
+#              - column:
+#                  name: surname
+#                  type: VARCHAR(100)
               - column:
-                  name: surname
-                  type: VARCHAR(100)
+                  name: create_date
+                  type: datetime
+                  defaultValueComputed: now()
